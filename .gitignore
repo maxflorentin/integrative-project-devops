@@ -1,2 +1,8 @@
-sandbox.tfvars
+# Local .terraform directories
+.terraform/*
+.terraform.lock.hcl
+
+sandbox02.tfvars
 backend.tf
+variables.tf
+main.tf
