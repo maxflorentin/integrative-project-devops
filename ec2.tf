@@ -8,8 +8,8 @@ module "ec2_instance" {
   instance_type          = "t2.small"
   key_name               = "tf_key_sandbox"
   monitoring             = false
-  vpc_security_group_ids = ["sg-0ffdf4f5aea5d6713"]
-  subnet_id              = "subnet-0dd0d3f2d1f3acdd3"
+  vpc_security_group_ids = var.ec2_sg
+  subnet_id              = var.ec2_subnet_id
 
   tags = {
     Terraform   = "true"
