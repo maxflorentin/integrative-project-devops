@@ -6,3 +6,4 @@ sandbox02.tfvars
 backend.tf
 variables.tf
 main.tf
+ec2_sandbox_me.pem
