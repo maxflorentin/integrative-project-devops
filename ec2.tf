@@ -2,7 +2,7 @@ module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"
 
-  name = "sb-ec2-instance"
+  name = "jenkins"
 
   ami                    = "ami-052efd3df9dad4825"
   instance_type          = "t2.small"
