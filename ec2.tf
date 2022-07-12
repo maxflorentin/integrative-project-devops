@@ -7,6 +7,7 @@ module "ec2_instance" {
   ami                    = "ami-052efd3df9dad4825"
   instance_type          = "t2.small"
   key_name               = "ec2_sandbox_me"
+  iam_instance_profile   = aws_iam_instance_profile.sandbox_me.name
   monitoring             = false
   vpc_security_group_ids = var.ec2_sg
   subnet_id              = var.ec2_subnet_id
