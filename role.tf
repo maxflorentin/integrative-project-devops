@@ -11,11 +11,12 @@ resource "aws_iam_role" "ec2_role_me" {
         Effect = "Allow"
         Sid    = ""
         Principal = {
-          Service = "ec2.amazonaws.com"
+          Service = ["ec2.amazonaws.com", "eks.amazonaws.com"]
         }
       },
     ]
-  })
+    },
+  )
 
   tags = {
     Terraform   = true

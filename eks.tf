@@ -19,7 +19,7 @@ module "eks" {
   # subnet_ids = module.vpc.private_subnets
 
   self_managed_node_group_defaults = {
-    instance_type                          = "t3.medium"
+    instance_type                          = "t3.small"
     update_launch_template_default_version = true
     iam_role_additional_policies = [
       "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
